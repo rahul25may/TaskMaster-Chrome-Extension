@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-hashes' ('sha256-9a2546805b5cd3ae8df6922c13f3c1888c457b8206d5d4ea1a52e52cc3af119b')"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="main-heading flex-disp">TODOs List</h2>
+        <div class="input-title flex-disp">
+            <label for="title" class="gap-2 bold-text">Title</label>
+            <input type="text" class="gap-2 borderClass" id="title">
+            <!-- <small id="small-text">(Add an item to the list)</small> -->
+        </div>
+        <div class="input-desc desClass">
+            <label for="description" class="gap-2 bold-text">Description</label>
+            <textarea id="description" rows="2" class="gap-2 borderClass" placeholder="Description in Short"></textarea>
+        </div>
+        <div class="buttons">
+
+            <button id="add" class="btn btn-primary">Add to List</button>
+            <button id="clear" class="btn btn-primary">Clear List</button>
+        </div>
+        <div id="items" class="my-2">
+            <h3 id="item-heading">Your Items</h3>
+            <!-- <div class="table-outer"> -->
+            <table class="table">
+                <thead class="tableHead thead-light">
+                    <tr>
+                        <th scope="col" class="gap-col-1">S.No.</th>
+                        <th scope="col" class="gap-col">Item Title</th>
+                        <th scope="col" class="gap-col">Item Description</th>
+                        <th scope="col" class="gap-col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="tableBodyClass" id="tableBody">
+                    <tr>
+                        <th scope="row" class="gap-col-1">1</th>
+                        <td class="gap-col">Coffee Time</td>
+                        <td class="gap-col">You need coffee at morning 9 'o' clock</td>
+                        <td class="gap-col"><button class="btn btn-sm btn-primary" id="delB">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- </div> -->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+<!-- // 'self' 'unsafe-inline' -->
+
+</html>
